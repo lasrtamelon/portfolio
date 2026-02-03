@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Andrea Cárceles | Portfolio</title>
+  <meta name="description" content="Portfolio de Andrea Cárceles — Java, Kotlin y Python. Desarrollo de aplicaciones multiplataforma." />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="layout">
+    <!-- IZQUIERDA (hero) -->
+    <section class="hero" aria-label="Presentación">
+      <div class="hero__media" role="img" aria-label="Imagen de presentación"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Desarrollo de Aplicaciones Multiplataforma</p>
+
+        <h1 class="hero__title">
+          Andrea<br>
+          <span class="hero__title--accent">Cárceles</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Enfocada en <strong>Java</strong>, <strong>Kotlin</strong> y <strong>Python</strong>
+          <br>
+          Creatividad + producto + código.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="assets/AndreaCarceles_CV.pdf" download>Descargar CV</a>
+        </div>
+
+        <nav class="social" aria-label="Redes">
+          <!-- Cambia los href por tus enlaces -->
+          <a class="social__link" href="mailto:andrea.carceles@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a class="social__link" href="https://github.com/lasrtamelon?tab=repositories" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a class="social__link" href="https://www.linkedin.com/in/andrea-cárceles-fernández" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </nav>
+
+        <div class="hero__tags" aria-label="Tecnologías principales">
+          <span class="tag tag--hot">Java</span>
+          <span class="tag tag--hot">Kotlin</span>
+          <span class="tag tag--hot">Python</span>
+        </div>
+      </div>
+
+      <button class="floating" id="toTop" aria-label="Volver arriba" title="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </section>
+
+    <!-- DERECHA (panel) -->
+    <section class="panel" aria-label="Contenido">
+      <header class="panel__header">
+        <div class="panel__headerText">
+          <h2 class="panel__heading">Sobre mí</h2>
+          <p class="panel__lead">
+            Técnica Superior en Desarrollo de Aplicaciones Multiplataforma, con base sólida en
+            programación orientada a objetos, diseño web y bases de datos.
+            <br>
+            Me caracteriza el pensamiento <strong>creativo e innovador</strong> para resolver retos y
+            construir soluciones con impacto.
+          </p>
+        </div>
+
+        <div class="panel__chips" aria-label="Fortalezas">
+          <span class="chip"><i class="fa-solid fa-wand-magic-sparkles"></i> Creatividad</span>
+          <span class="chip"><i class="fa-solid fa-people-group"></i> Trabajo en equipo</span>
+          <span class="chip"><i class="fa-solid fa-sitemap"></i> Organización</span>
+          <span class="chip"><i class="fa-solid fa-puzzle-piece"></i> Resolución de problemas</span>
+        </div>
+      </header>
+
+      <div class="panel__grid">
+        <!-- SKILLS -->
+        <section class="card" id="skills">
+          <h3 class="card__title">Tecnologías</h3>
+
+          <div class="skill">
+            <div class="skill__row">
+              <span class="skill__name">Java</span>
+              <span class="skill__hint">principal</span>
+            </div>
+            <div class="skill__bar"><span class="skill__fill" style="width: 92%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__row">
+              <span class="skill__name">Kotlin</span>
+              <span class="skill__hint">principal</span>
+            </div>
+            <div class="skill__bar"><span class="skill__fill" style="width: 82%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__row">
+              <span class="skill__name">Python</span>
+              <span class="skill__hint">principal</span>
+            </div>
+            <div class="skill__bar"><span class="skill__fill" style="width: 78%"></span></div>
+          </div>
+
+          <hr class="sep" />
+
+          <ul class="pillList" aria-label="Stack complementario">
+            <li>Spring</li>
+            <li>Angular</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>Svelte</li>
+            <li>HTML/CSS/SCSS</li>
+            <li>MySQL / SQL</li>
+            <li>Unity (C#)</li>
+            <li>Git</li>
+            <li>Figma</li>
+          </ul>
+        </section>       
+
+        <!-- FORMACIÓN -->
+        <section class="card" id="formacion">
+          <h3 class="card__title">Formación</h3>
+
+          <div class="edu">
+            <div class="edu__when">Grado Superior</div>
+            <div class="edu__what">
+              <strong>Desarrollo de Aplicaciones Multiplataforma</strong>
+              <div class="edu__where">Institutos Nebrija de Formación Profesional</div>
+            </div>
+          </div>
+
+          <div class="edu">
+            <div class="edu__when">2014 – 2016</div>
+            <div class="edu__what">
+              <strong>Administración de Sistemas Informáticos en Red</strong>
+              <div class="edu__where">IES Nuestra Señora del Pilar (Salesianos)</div>
+            </div>
+          </div>
+
+          <hr class="sep" />
+
+          <div class="mini">
+            <span class="mini__item"><i class="fa-solid fa-language"></i> Inglés: B1</span>
+            <span class="mini__item"><i class="fa-solid fa-id-card"></i> Carnet B1</span>
+          </div>
+        </section>
+
+         <!-- EXPERIENCIA -->
+        <section class="card card--wide" id="experiencia">
+          <h3 class="card__title">Experiencia</h3>
+
+          <article class="timelineItem">
+            <div class="timelineItem__meta">
+              <span class="timelineItem__year">2010 – 2024</span>
+              <span class="timelineItem__role">Jefe de Sucursal</span>
+            </div>
+            <div class="timelineItem__body">
+              <p class="timelineItem__company">GAME STORES IBERIA S.L</p>
+              <ul class="bullets">
+                <li>Planificación y realización de horarios.</li>
+                <li>Gestión y recepción de mercancía, control de stock.</li>
+                <li>Motivación y coordinación de equipo.</li>
+                <li>Atención personalizada a clientes.</li>
+              </ul>
+              <p class="note">
+                En esta etapa reforcé habilidades clave: liderazgo, comunicación, organización y gestión de prioridades.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="card card--wide" id="proyectos">
+          <div class="card__head">
+            <h3 class="card__title">Proyectos</h3>
+            <p class="card__subtitle">Selección basada en tus proyectos académicos. Sustituye “Demo/Repo” por tus enlaces reales.</p>
+          </div>
+
+          <div class="projects">
+            <article class="project">
+              <h4 class="project__title">Aventura conversacional (Doraemon)</h4>
+              <p class="project__desc">Juego narrativo con personajes, estructura por escenas y lógica de decisiones.</p>
+              <div class="project__meta">
+                <span class="badge badge--hot">Java 21</span>
+                <span class="badge">POO</span>
+              </div>
+              <!-- <div class="project__links">
+                <a href="#" class="link">Repo</a>
+                <a href="#" class="link">Demo</a>
+              </div> -->
+            </article>
+
+            <article class="project">
+              <h4 class="project__title">CRM empresarial Full Stack</h4>
+              <p class="project__desc">Aplicación tipo CRM con frontend moderno y backend robusto.</p>
+              <div class="project__meta">
+                <span class="badge">Angular 20</span>
+                <span class="badge badge--hot">Spring Boot</span>
+                <span class="badge badge--hot">Java 21</span>
+              </div>
+              <!-- <div class="project__links">
+                <a href="#" class="link">Repo</a>
+                <a href="#" class="link">Demo</a>
+              </div> -->
+            </article>
+
+            <article class="project">
+              <h4 class="project__title">Juego en Unity 3D</h4>
+              <p class="project__desc">Interacción digital y ambientación tridimensional.</p>
+              <div class="project__meta">
+                <span class="badge">Unity</span>
+                <span class="badge">C#</span>
+              </div>
+              <!-- <div class="project__links">
+                <a href="#" class="link">Repo</a>
+                <a href="#" class="link">Demo</a>
+              </div> -->
+            </article>
+
+            <article class="project">
+              <h4 class="project__title">Salud Conecta</h4>
+              <p class="project__desc">App de salud para proyecto social (Caixa Dualiza).</p>
+              <div class="project__meta">
+                <span class="badge badge--hot">Kotlin</span>
+                <span class="badge">App</span>
+              </div>
+              <!-- <div class="project__links">
+                <a href="#" class="link">Repo</a>
+                <a href="#" class="link">Demo</a>
+              </div> -->
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Andrea Cárceles — Hecho con HTML/CSS y JavaScript.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
